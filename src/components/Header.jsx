@@ -8,6 +8,7 @@ function Header() {
     function pathMathRouter(route){
         if (route === location.pathname){
             return true;
+        
         }
     }
   return (
@@ -34,7 +35,7 @@ function Header() {
                     } onClick={()=>{navigate('/offers') }}>Offers</li>
                     <li className={`cursor-pointer py-3 text-sm font-semibold
                     text-gray-400 border-b-[3px] bottom-b-transparent
-                    ${pathMathRouter('/sign-up') && "text-black border-b-red-500"}`
+                    ${pathMathRouter('/sign-in') && "text-black border-b-red-500"}`
                     } onClick={()=>{navigate('/sign-in') }} >Sign in</li>
                 </ul>
             </div>
